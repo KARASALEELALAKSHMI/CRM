@@ -9,7 +9,7 @@ export default function Quotations() {
 
   useEffect(() => {
     const fetchData = async () => {
-      // ✅ Fetch logged-in user
+      // Fetch logged-in user
       const {
         data: { session },
       } = await supabase.auth.getSession();
@@ -17,7 +17,7 @@ export default function Quotations() {
       if (session) {
         setUser(session.user);
 
-        // ✅ Example fetch quotations table from Supabase
+        //Example fetch quotations table from Supabase
         const { data, error } = await supabase
           .from("quotations") // <-- make sure your table exists
           .select("*")
