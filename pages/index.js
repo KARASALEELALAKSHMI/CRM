@@ -22,7 +22,7 @@ export default function Login() {
     if (error) {
       setError("Invalid email or password");
     } else {
-      router.push("/home"); // ✅ redirect on success
+      router.push("/home");
     }
   };
 
@@ -90,14 +90,6 @@ export default function Login() {
             SIGN IN
           </button>
         </form>
-
-        {/* Footer */}
-        <div className="mt-6 text-center text-sm">
-          Don’t have an account?{" "}
-          <a href="#" className="text-blue-600 hover:underline">
-            Create one
-          </a>
-        </div>
       </div>
     </div>
   );
