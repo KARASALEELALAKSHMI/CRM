@@ -57,7 +57,7 @@ export default function HomePage() {
           className="bg-white shadow-md rounded-xl p-6 w-64 h-40 flex flex-col items-center justify-center hover:shadow-lg transition transform hover:scale-105 cursor-pointer"
         >
           <span className="text-3xl mb-2">👥</span>
-          <h2 className="text-lg font-semibold">Customers</h2>
+          <h2 className="text-lg font-semibold">CRM</h2>
           <p className="text-xs text-gray-500 mt-1 text-center">
             Manage customer details
           </p>
